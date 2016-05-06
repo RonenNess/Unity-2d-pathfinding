@@ -1,5 +1,5 @@
 # Unity-2d-pathfinding
-A very simple 2d tile-based pathfinding for unity, with penalty supported
+A very simple 2d tile-based pathfinding for unity, with tiles price supported.
 
 ## About
 
@@ -28,15 +28,15 @@ float[,] tilesmap = new float[width, height];
 PathFind.Grid grid = new PathFind.Grid(width, height, tilesmap);
 
 // create source and target points
-PathFind.Point from = new PathFind.Point(1, 1);
-PathFind.Point to = new PathFind.Point(10, 10);
+PathFind.Point _from = new PathFind.Point(1, 1);
+PathFind.Point _to = new PathFind.Point(10, 10);
 
 // get path
 // path will either be a list of Points (x, y), or an empty list if no path is found.
-List<PathFind.Point> path = PathFind.Pathfinding.FindPath(grid, from, to);
+List<PathFind.Point> path = PathFind.Pathfinding.FindPath(grid, _from, _to);
 ```
 
-If you don't care about price of tiles, eg tiles can only be walkable or blocking, you can also pass a 2d array of booleans when creating the grid:
+If you don't care about price of tiles (eg tiles can only be walkable or blocking), you can also pass a 2d array of *booleans* when creating the grid:
 ```C#
 // create the tiles map
 bool[,] tilesmap = new bool[width, height];
@@ -46,5 +46,5 @@ bool[,] tilesmap = new bool[width, height];
 // create a grid
 PathFind.Grid grid = new PathFind.Grid(width, height, tilesmap);
 
-...
+// rest is the same..
 ```
