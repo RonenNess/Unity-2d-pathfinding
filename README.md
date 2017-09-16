@@ -1,6 +1,14 @@
 # Unity-2d-pathfinding
 A very simple 2d tile-based pathfinding for unity, with tiles price supported.
 
+## NEW REPO
+
+I moved this script to a dedicated repo for Unity utilities.
+
+A newer version can be found [here](https://github.com/RonenNess/UnityUtils/tree/master/Controls/PathFinding/2dTileBasedPathFinding) along with other useful Unity scripts.
+
+This repo will remain online but won't be maintained.
+
 ## About
 
 This code is mostly based on the code from [this tutorial](https://www.youtube.com/watch?v=mZfyt03LDH4), with the following modifications:
